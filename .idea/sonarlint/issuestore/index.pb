@@ -59,3 +59,6 @@ e
 -src/main/kotlin/filter/MostRatedNewsFilter.kt,e/d/ed41267f5bc228657de4f8d0db07dd40b1bb88b5
 T
 $src/main/kotlin/filter/NewsFilter.kt,4/4/4478bd44b1db6049df4ab653b287f33ced5aa318
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
