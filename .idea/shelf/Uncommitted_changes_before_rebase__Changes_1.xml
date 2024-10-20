@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_rebase_[Changes]1" date="1726516761374" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/f/9/f9a241530ffd0830b0614e4b940f408c747b20e1" />
+    <option name="AFTER_PATH" value=".idea/sonarlint/issuestore/f/9/f9a241530ffd0830b0614e4b940f408c747b20e1" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/f9a241530ffd0830b0614e4b940f408c747b20e1" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/4/4/4478bd44b1db6049df4ab653b287f33ced5aa318" />
+    <option name="AFTER_PATH" value=".idea/sonarlint/issuestore/4/4/4478bd44b1db6049df4ab653b287f33ced5aa318" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/4478bd44b1db6049df4ab653b287f33ced5aa318" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/e/d/ed41267f5bc228657de4f8d0db07dd40b1bb88b5" />
+    <option name="AFTER_PATH" value=".idea/sonarlint/issuestore/e/d/ed41267f5bc228657de4f8d0db07dd40b1bb88b5" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/ed41267f5bc228657de4f8d0db07dd40b1bb88b5" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/9/7/97cd672b4f93609d7f58f10872d55db8cde60cfd" />
+    <option name="AFTER_PATH" value=".idea/sonarlint/issuestore/9/7/97cd672b4f93609d7f58f10872d55db8cde60cfd" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/97cd672b4f93609d7f58f10872d55db8cde60cfd" />
+  </binary>
+</changelist>

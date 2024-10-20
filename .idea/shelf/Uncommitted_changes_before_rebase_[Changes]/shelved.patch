@@ -1,0 +1,71 @@
+Index: build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\n    kotlin(\"jvm\") version \"1.9.22\"\n    kotlin(\"plugin.serialization\") version \"1.9.22\" // Плагин для сериализации\n}\n\ngroup = \"org.example\"\nversion = \"1.0-SNAPSHOT\"\n\nrepositories {\n    mavenCentral()\n}\n\ndependencies {\n    // Тестирование\n    testImplementation(\"org.jetbrains.kotlin:kotlin-test\")\n\n    // Ktor Client для HTTP-запросов\n    implementation(\"io.ktor:ktor-client-core:2.0.0\")\n    implementation(\"io.ktor:ktor-client-cio:2.0.0\") // CIO - одна из реализаций клиента\n\n    // kotlinx.serialization для работы с JSON\n    implementation(\"org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1\")\n\n    // SLF4J для логирования (если планируешь использовать)\n    implementation(\"org.slf4j:slf4j-simple:1.7.36\")\n}\n\ntasks.test {\n    useJUnitPlatform()\n}\n\nkotlin {\n    jvmToolchain(17)\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle.kts b/build.gradle.kts
+--- a/build.gradle.kts	(revision aaf1e8a74194aa60a992a658497b6d16e85d9021)
++++ b/build.gradle.kts	(date 1726516462826)
+@@ -11,17 +11,13 @@
+ }
+ 
+ dependencies {
+-    // Тестирование
+     testImplementation("org.jetbrains.kotlin:kotlin-test")
+ 
+-    // Ktor Client для HTTP-запросов
+     implementation("io.ktor:ktor-client-core:2.0.0")
+-    implementation("io.ktor:ktor-client-cio:2.0.0") // CIO - одна из реализаций клиента
++    implementation("io.ktor:ktor-client-cio:2.0.0")
+ 
+-    // kotlinx.serialization для работы с JSON
+     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+ 
+-    // SLF4J для логирования (если планируешь использовать)
+     implementation("org.slf4j:slf4j-simple:1.7.36")
+ }
+ 
+Index: .idea/sonarlint/issuestore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\n@\n\u0010build.gradle.kts\u0012,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d\nG\n\u0017src/main/kotlin/News.kt\u0012,9/9/998aafe51fe4d6ca356873d3126c4b1a126d8c4b\n7\n\u0007gradlew\u0012,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9\n;\n\u000Bgradlew.bat\u0012,2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3\nL\n\u001Csrc/main/kotlin/KudaGoApi.kt\u0012,6/5/65a0c8ae00feea1f998dc8bf67511061d40409af\nQ\n!src/main/kotlin/NewsProcessing.kt\u0012,c/4/c4b2aaa6e86cbecdf4712c6d0900ceb6e5d7faf8\nO\n\u001Fsrc/main/kotlin/NewsProvider.kt\u0012,8/e/8e60e12dd5c5646283b60827c58366940fefe14f\nU\n%src/main/kotlin/KudaGoNewsProvider.kt\u0012,3/3/33806d55dc2af846cdb261f2c2b80b2d871b9df7\nM\n\u001Dsrc/main/kotlin/NewsFilter.kt\u0012,a/f/af5f2e5651ed60e38d6257ed0fac3fc24a0498eb\nX\n(src/main/kotlin/MostRatedNewsFilter.java\u0012,1/f/1f243edc2615fa536068825eb069287ddd2d0c23\nV\n&src/main/kotlin/MostRatedNewsFilter.kt\u0012,6/1/61c8541f47d46b79bfd15b8371577d8afaffd401\nL\n\u001Csrc/main/kotlin/NewsSaver.kt\u0012,e/3/e39be84b30207b4f644a250953ee29cbef0d61d7\nO\n\u001Fsrc/main/kotlin/CsvNewsSaver.kt\u0012,2/8/280cb4f435dc5fb03e9ff245c37080c6dcf6aead\nG\n\u0017src/main/kotlin/Main.kt\u0012,d/8/d83ae3847b7d408136086cc5e9e95f5f7c126ed5\nP\n src/main/kotlin/PrettyPrinter.kt\u0012,f/f/fff8f19f5e507338bd6e782c059df585bdf6ce2e\nW\n'src/main/kotlin/ConsolePrettyPrinter.kt\u0012,3/0/300f039377732d0fec7d5d7280fadb429b2d1b41\nU\n%src/main/kotlin/KudaGoNewsResponse.kt\u0012,b/5/b58b9272c690fe12fe4d7c8185a3e5888023dd03\n8\n\bnews.csv\u0012,9/f/9fa57c95ed3a374e84814ced9b3f8f0876f03dae\nH\n\u0018src/main/kotlin/Plase.kt\u0012,1/1/110d289773096c53c52b4c4bb58f9680643ee101\nH\n\u0018src/main/kotlin/Place.kt\u0012,a/9/a966c23d6abdcfe9f5e43521be05cdfafe1ece12\nK\n\u001Bsrc/main/kotlin/dto/News.kt\u0012,8/9/89025ca75d7c5f7db3c6d1da1832a1ba3686f5c3\nL\n\u001Csrc/main/kotlin/dto/Place.kt\u0012,8/4/849094dd0630370e43a10e47141a3a0822e17b40\nY\n)src/main/kotlin/dto/KudaGoNewsResponse.kt\u0012,f/9/f9a241530ffd0830b0614e4b940f408c747b20e1\nU\n%src/main/kotlin/saver/CsvNewsSaver.kt\u0012,4/8/48fb53c44c6fdcf3e72e973c5cb322d4b386a175\n^\n.src/main/kotlin/provider/KudaGoNewsProvider.kt\u0012,5/5/559d9aa618e1e19f426d66c7954fa5bf2d1b8865\nX\n(src/main/kotlin/provider/NewsProvider.kt\u0012,9/7/97cd672b4f93609d7f58f10872d55db8cde60cfd\ne\n5src/main/kotlin/prettyprinter/ConsolePrettyPrinter.kt\u0012,b/c/bcdf5c54130e1491c09af7b20f44713f8505c5d3\n^\n.src/main/kotlin/prettyprinter/PrettyPrinter.kt\u0012,4/b/4bacc7afe614ac650e6d2cbafa492b3c79b8843d\n]\n-src/main/kotlin/filter/MostRatedNewsFilter.kt\u0012,e/d/ed41267f5bc228657de4f8d0db07dd40b1bb88b5\nT\n$src/main/kotlin/filter/NewsFilter.kt\u0012,4/4/4478bd44b1db6049df4ab653b287f33ced5aa318
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/issuestore/index.pb b/.idea/sonarlint/issuestore/index.pb
+--- a/.idea/sonarlint/issuestore/index.pb	(revision aaf1e8a74194aa60a992a658497b6d16e85d9021)
++++ b/.idea/sonarlint/issuestore/index.pb	(date 1726516460137)
+@@ -58,4 +58,7 @@
+ ]
+ -src/main/kotlin/filter/MostRatedNewsFilter.kt,e/d/ed41267f5bc228657de4f8d0db07dd40b1bb88b5
+ T
+-$src/main/kotlin/filter/NewsFilter.kt,4/4/4478bd44b1db6049df4ab653b287f33ced5aa318
+\ No newline at end of file
++$src/main/kotlin/filter/NewsFilter.kt,4/4/4478bd44b1db6049df4ab653b287f33ced5aa318
++:
++
++.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+\ No newline at end of file
+Index: .idea/sonarlint/securityhotspotstore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\n@\n\u0010build.gradle.kts\u0012,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d\nG\n\u0017src/main/kotlin/News.kt\u0012,9/9/998aafe51fe4d6ca356873d3126c4b1a126d8c4b\n7\n\u0007gradlew\u0012,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9\n;\n\u000Bgradlew.bat\u0012,2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3\nL\n\u001Csrc/main/kotlin/KudaGoApi.kt\u0012,6/5/65a0c8ae00feea1f998dc8bf67511061d40409af\nQ\n!src/main/kotlin/NewsProcessing.kt\u0012,c/4/c4b2aaa6e86cbecdf4712c6d0900ceb6e5d7faf8\nO\n\u001Fsrc/main/kotlin/NewsProvider.kt\u0012,8/e/8e60e12dd5c5646283b60827c58366940fefe14f\nU\n%src/main/kotlin/KudaGoNewsProvider.kt\u0012,3/3/33806d55dc2af846cdb261f2c2b80b2d871b9df7\nM\n\u001Dsrc/main/kotlin/NewsFilter.kt\u0012,a/f/af5f2e5651ed60e38d6257ed0fac3fc24a0498eb\nX\n(src/main/kotlin/MostRatedNewsFilter.java\u0012,1/f/1f243edc2615fa536068825eb069287ddd2d0c23\nV\n&src/main/kotlin/MostRatedNewsFilter.kt\u0012,6/1/61c8541f47d46b79bfd15b8371577d8afaffd401\nL\n\u001Csrc/main/kotlin/NewsSaver.kt\u0012,e/3/e39be84b30207b4f644a250953ee29cbef0d61d7\nO\n\u001Fsrc/main/kotlin/CsvNewsSaver.kt\u0012,2/8/280cb4f435dc5fb03e9ff245c37080c6dcf6aead\nG\n\u0017src/main/kotlin/Main.kt\u0012,d/8/d83ae3847b7d408136086cc5e9e95f5f7c126ed5\nP\n src/main/kotlin/PrettyPrinter.kt\u0012,f/f/fff8f19f5e507338bd6e782c059df585bdf6ce2e\nW\n'src/main/kotlin/ConsolePrettyPrinter.kt\u0012,3/0/300f039377732d0fec7d5d7280fadb429b2d1b41\nU\n%src/main/kotlin/KudaGoNewsResponse.kt\u0012,b/5/b58b9272c690fe12fe4d7c8185a3e5888023dd03\n8\n\bnews.csv\u0012,9/f/9fa57c95ed3a374e84814ced9b3f8f0876f03dae\nH\n\u0018src/main/kotlin/Plase.kt\u0012,1/1/110d289773096c53c52b4c4bb58f9680643ee101\nH\n\u0018src/main/kotlin/Place.kt\u0012,a/9/a966c23d6abdcfe9f5e43521be05cdfafe1ece12\nK\n\u001Bsrc/main/kotlin/dto/News.kt\u0012,8/9/89025ca75d7c5f7db3c6d1da1832a1ba3686f5c3\nL\n\u001Csrc/main/kotlin/dto/Place.kt\u0012,8/4/849094dd0630370e43a10e47141a3a0822e17b40\nY\n)src/main/kotlin/dto/KudaGoNewsResponse.kt\u0012,f/9/f9a241530ffd0830b0614e4b940f408c747b20e1\nU\n%src/main/kotlin/saver/CsvNewsSaver.kt\u0012,4/8/48fb53c44c6fdcf3e72e973c5cb322d4b386a175\n^\n.src/main/kotlin/provider/KudaGoNewsProvider.kt\u0012,5/5/559d9aa618e1e19f426d66c7954fa5bf2d1b8865\nX\n(src/main/kotlin/provider/NewsProvider.kt\u0012,9/7/97cd672b4f93609d7f58f10872d55db8cde60cfd\ne\n5src/main/kotlin/prettyprinter/ConsolePrettyPrinter.kt\u0012,b/c/bcdf5c54130e1491c09af7b20f44713f8505c5d3\n^\n.src/main/kotlin/prettyprinter/PrettyPrinter.kt\u0012,4/b/4bacc7afe614ac650e6d2cbafa492b3c79b8843d\n]\n-src/main/kotlin/filter/MostRatedNewsFilter.kt\u0012,e/d/ed41267f5bc228657de4f8d0db07dd40b1bb88b5\nT\n$src/main/kotlin/filter/NewsFilter.kt\u0012,4/4/4478bd44b1db6049df4ab653b287f33ced5aa318
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/securityhotspotstore/index.pb b/.idea/sonarlint/securityhotspotstore/index.pb
+--- a/.idea/sonarlint/securityhotspotstore/index.pb	(revision aaf1e8a74194aa60a992a658497b6d16e85d9021)
++++ b/.idea/sonarlint/securityhotspotstore/index.pb	(date 1726516460138)
+@@ -58,4 +58,7 @@
+ ]
+ -src/main/kotlin/filter/MostRatedNewsFilter.kt,e/d/ed41267f5bc228657de4f8d0db07dd40b1bb88b5
+ T
+-$src/main/kotlin/filter/NewsFilter.kt,4/4/4478bd44b1db6049df4ab653b287f33ced5aa318
+\ No newline at end of file
++$src/main/kotlin/filter/NewsFilter.kt,4/4/4478bd44b1db6049df4ab653b287f33ced5aa318
++:
++
++.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+\ No newline at end of file
