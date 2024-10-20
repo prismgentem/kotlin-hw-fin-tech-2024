@@ -1,6 +1,5 @@
 package dto
 
-import dto.News
 import kotlinx.serialization.Serializable
 
 @Serializable
